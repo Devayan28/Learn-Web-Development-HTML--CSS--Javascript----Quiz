@@ -1,0 +1,334 @@
+body {
+    background-color: #e4d8c8;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  /* Navigation Bar */
+  
+  #home {
+    background-color:  #3a6ab8;
+    padding-bottom: 1.5cm;
+    margin-left:-1cm;
+    margin-right:-1cm;
+    margin-top:-1cm;
+    padding-top: 1.5cm;
+    padding-bottom: 2.5cm;
+    height: 5mm;
+   }
+
+   .site_name {
+    float: center;
+    font-family: 'Comic Sans MS';
+    text-align: center;
+    color: aliceblue;
+    font-weight: bolder;
+    font-size: 50px;
+  }
+
+  .site_name .quote {
+    font-size: 15px;
+    font-style: italic;
+    align-items: center;
+    padding-bottom: 10px;
+    flex-direction: row;
+
+  }
+
+  .site_name img {
+    width: 50px;
+    margin-right: 10px;
+    margin-top: 12px;
+    align-items: center;
+  } 
+
+  /* Button Section */
+  .button-container {
+    display: flex;
+    padding-left: 300px;
+    
+
+  }
+  
+  .custom-button {
+    width: 300px;
+    height: 300px;
+    margin-right: 200px;
+    font-family: 'Comic Sans MS';
+    background-color: #ffffff00;
+    color: rgba(0, 0, 0, 0.566);
+    border-radius: 25px;
+    border-color: rgba(0, 0, 0, 0.449);
+    border-width: 3px;
+    transition: box-shadow 0.3s ease;
+    transition: transform 1s ease;
+
+  }
+
+  .custom-button img {
+    height: 200px;
+    width: 200px;
+  }
+
+  .custom-button:hover {
+    border-radius: 25px;
+    border-width: 3px;
+    color: rgba(0, 0, 0, 0.566);
+    background-color: #e7a9a9;
+    border-color: rgba(0, 0, 0, 0.449);
+    cursor: pointer;
+    box-shadow: 20px 10px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.07);
+  }
+
+  .custom-link {
+    color: rgba(0, 0, 0, 0.566);
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  #heading{
+    color: rgba(0, 0, 0, 0.689);
+  }
+
+  .buttons {
+    text-decoration: underline;
+    font-size: 60px;
+    margin-left: 80px;
+    font-family: 'Comic Sans MS';
+    color: rgba(0, 0, 0, 0.712);
+
+  }
+
+  /* Introduction Section */
+
+  .paragraph1 {
+    font-size: 24px;
+    margin-left: 50px;
+    color: black;
+    font-family: 'Comic Sans MS';
+  }
+
+  .paragraph2 {
+    font-size: 24px;
+    margin-left: 50px;
+    color: black;
+    font-family: 'Comic Sans MS';
+  }
+
+  .paragraph3 {
+    font-size: 24px;
+    margin-left: 50px;
+    color: black;
+    font-family: 'Comic Sans MS';
+  }
+
+  .section1 {
+    padding-left: 230px;
+    padding-right: 230px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+  }
+
+  .section1 img {
+    width: 400px;
+  }
+
+  .section2 {
+    padding-left: 180px;
+    padding-right: 180px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+  }
+
+  .section2 img {
+    width: 550px;
+  }
+
+  .section3 {
+    padding-left: 180px;
+    padding-right: 180px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+  }
+
+  .section3 img {
+    width: 500px;
+  }
+
+  /* Feedback Form */
+  
+  input, textarea {
+    font-family: 'Comic Sans MS'; 
+    margin: 10px;  
+    width:100%;
+  }
+  
+  fieldset {
+    display: flexbox;
+    align-content: center;
+    justify-content: center;  
+    padding: 25px; 
+    margin-left: 50px; 
+    margin-right: 50px;   
+    border: thin solid white;
+    width: 50%;
+  }
+
+  .all_feedback {
+    display: flex;
+    font-family: 'Comic Sans MS';
+    align-items: center;
+    margin-left: 1in;
+    flex-direction: row;
+    flex-flow: wrap;
+    padding: 30px;
+  }
+  
+  .feedback {
+    font-style: italic;
+    text-align: left;
+    width: 21.875rem;
+    padding: 1rem;
+    background-color: #ffffffc7;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--primary-shadow);
+    padding: 20px;
+    margin: 10px;
+    border:2px solid rgb(128, 128, 128);
+    font-size: 18px;
+    height: 200px;
+  }
+  
+  .feedback span {
+    color: #000000;
+    font-size: 20px;
+    font-family: 'Comic Sans MS';
+  }
+
+  h2 {
+    font-size: 50px;
+    font-family: 'Comic Sans MS';
+    padding-left: 50px;
+    
+  }
+
+  h1 {
+    text-align: center;
+    font-family: 'Comic Sans MS';
+  }
+  
+  /* Submit Button */
+  
+  button {
+    background-color: #fff;
+    border: 1px solid #3a6ab8;
+    color: #3a6ab8;
+    display: block;
+    border-radius: 6px;
+    text-align: center;
+    margin: 50px;
+    padding: 10px;
+    width: 2in;
+    font-size: 20px;
+  }
+  
+  button:hover {
+    background-color: #3a6ab8;
+    border: 1px solid #3a6ab8;
+    color: #fff;
+    display: block;
+    border-radius: 6px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .flex_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .iconbutton{
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    background-color: #3a6ab8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+    cursor: pointer;
+  }
+
+  .introduction {
+    font-family: 'Comic Sans MS';
+  }
+  
+  /* Popup */
+
+  .popup {
+    width:400px;
+    background-color: #9dcaf2dd;
+    border-radius: 3mm;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    position: fixed;
+    visibility: hidden;
+  }
+  
+  .popup img {
+    padding-top: 20px;
+  }
+  
+  .popup button {
+    background-color: #fff;
+    border: 1px solid #3a6ab8;
+    color: #3a6ab8;
+    display: block;
+    border-radius: 6px;
+    text-align: center;
+    margin: 50px;
+    padding: 10px;
+    width: 2in;
+    font-size: 20px;
+    margin-left: 25%;
+  }
+  
+  .popup button:hover {
+    background-color: #fff;
+    border: 2px solid #3a6ab8;
+    color: #3a6ab8;
+    display: block;
+    font-weight: bolder;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 25%;
+  }
+
+  .flex_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h3 {
+    color: #3a6ab8;
+  }

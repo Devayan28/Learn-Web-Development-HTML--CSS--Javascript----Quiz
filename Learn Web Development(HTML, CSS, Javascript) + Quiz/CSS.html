@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS_style.css">
+</head>
+<body>
+        <header>
+            <h1 id="heading">Learn CSS</h1>
+            
+                
+                <nav>
+                    <ul>
+                        
+                        <li class="list"><a href="#basics">Basics</a></li>
+                        <li class="list"><a href="#Cascading, Specificity, and Inheritance">Cascading, Specificity, and Inheritance</a></li>
+                        <li class="list"><a href="#Organization and Sizing">Organization and Sizing</a></li>
+                        <li class="list"><a href="#The CSS Box Model">The CSS Box Model</a></li>
+                        
+                    </ul>
+                </nav>
+            
+        </header>
+        <br>
+
+        <section id="home" class="container">
+            <h2>Welcome to Learn CSS</h2>
+            <p>CSS (Cascading Styling Sheet) is the language that defines the presentation of a document written in a markup language like HTML. CSS is the language that transforms a basic HTML structure into a user-friendly and visually beautiful webpage.</p>
+        </section>
+
+        <section id="basics" class="container">
+            <h2>CSS Basics</h2>
+            <p>IT is a simple language that controls how HTML elements are displayed on a webpage. With CSS, you can change the font size and color, add backgrounds, and control the layout, transforming a basic webpage into a visually appealing and user-friendly experience.
+            Syntax :
+            <pre><strong>selector { Property: value; }</strong></pre>
+            <br>Every declaration has a CSS property name and a value, separated by a colon(:) and is surrounded by curly braces({ }). For declaring the multiple CSS properties, it can be separated by the semicolon(;).
+        <li><b>Declaration: </b>A combination of a property and its corresponding value.</li>
+        <li><b>Selector: </b>Used to target and select specific HTML elements to apply styles to.</li>
+        <li><b>Property: </b>Defines the specific aspect or characteristic of an element that you want to modify.</li>
+        <li><b>Value: </b> Assigned setting or parameter for a given property, determining how the selected element should appear or behave.</li></p>
+            
+            <br>
+            <h4>Size</h4><br>
+            <p>When you add text to a webpage you can use the CSS <code>font-size</code> declaration to set the size to whatever you want. 
+                <pre><strong>font-size: 18px;</strong></pre> </p>
+                <br>
+                <h4>Font</h4><br>
+                <p>To change your webpage's font, you can use the CSS <code>font-family</code> declaration to specify what font you want to use instead.
+                    <pre><strong>font-family: 'georgia';</strong></pre>
+                </p><br>
+                <h4>Weight</h4><br>
+                <p> the CSS <code>font-weight</code> declaration can be used to make your selected text <b>bold</b>, <b>italic</b>  according to preference and also to specify how bold or italic it should be. 
+                    <pre><strong>font-weight: bold;</strong></pre>
+                </p><br>
+                <h4>Alignment</h4><br>
+                <p>You can use the CSS <code>text-align</code> declaration to change the alignment of your selected text, and the values are predictable: <b>left, right, justify, or center.</b>  
+                    <pre><strong>text-align: center;</strong></pre>
+                </p><br>
+                <h4>Text color</h4><br>
+                <p> If you want to change the color of your text, you can use the CSS <code>color</code> declaration to set the color to whatever you want  
+                    <pre><strong>color: red;</strong></pre>
+                </p><br>
+                <h4>Background color</h4><br>
+                <p>  If you want to color the rest of webpage as in, the parts of your HTML elements that aren't text—you'll need to use the <code>background-color</code> CSS declaration instead.
+                    <pre><strong>background-color: blue;</strong></pre>
+                </p><br>
+                
+        </section>
+
+        <section id="Cascading, Specificity, and Inheritance" class="container">
+            <h2>Cascading</h2>
+            <p>Cascading refers to the logic your browser uses to determine which CSS rulesets are the most important, especially when they conflict with each other.if you create multiple rulesets with the same selectors and declarations, the last one in your stylesheet will be the most important to your browser.<br>For example, imagine your stylesheet looked like this:
+                <pre>a {<br>   color: purple;<br>}<br>a {<br>   color: green;<br>} 
+                </pre>
+                Both rulesets are targeting the same HTML—all <a> elements on the page—but telling the browser to do two different things, and it can't do both at once. By cascading, your browser is able to choose which of the rulesets to follow.<br><br>
+                <h2>Specificity</h2>
+                Another common conflict with CSS rulesets is when you have multiple rulesets with different selectors targeting the same elements. For example, imagine you added a few paragraphs to your webpage, but gave just one of them an id attribute:
+                <pre>&lt;p&gt;Just some paragraph&lt;p&gt;
+    &lt;p&gt;id="special">One with an id&lt;p&gt;
+    &lt;p&gt;Just another paragraph&lt;p&gt;</pre><br>
+                    Then imagine that you added a couple of CSS rulesets.
+                    <pre>#special {<br>    color: green;<br>}<br>p {<br>    color: purple;<br>}</pre>
+                    It can't do both things at once. However, your browser uses the concept of specificity to determine which ruleset to follow, and it cares even more about specificity than it does about the order. That means that the browser will choose whichever ruleset has most specific selector
+                    <br><br>
+                    <h2>Inheritance</h2>
+                    <p> Inheritance is about keeping your CSS orderly and avoiding unnecessary repetition.Any time an HTML element contains another element, they are commonly described as a parent and a child, the parent often passes down traits to its child. <br><br>Despite the fact that you targeted only the <code>&lt;div&gt;</code> element, the text in the <code>&lt;p&gt;</code> element would still be displayed with the new font. That's because the <code>&lt;p&gt;</code> element inherits the font-family declaration from its parent, the <code>&lt;div&gt;</code> element. </p>
+                        <br><pre>div {<br>   font-family: 'courier';<br>}</pre>
+            </p>
+            
+        </section>
+        <section id="Organization and Sizing" class="container">
+            <h1>Organization and Sizing</h1><br>
+            <h3>Organization</h3><br>
+            <h4>Display</h4>
+            <p>One of the most essential tools CSS provides for organizing a webpage is the <code>display</code> declaration. Every HTML element has a certain display value by default, and they correspond to the basic block-level and inline organizational behaviors.<br>For example, imagine that you wanted to make a list of links to your favorite websites. Maybe you want to stack them vertically, now create a ruleset that uses the display declaration to change the default behavior of the &lt;a&gt; element to block.</p>
+            <pre>a { <br>   display: block;<br>}</pre>
+            <p>Now that webpage would show a series of vertically stacked links</p>
+            <br>
+            <h4>No Display</h4>
+            <p>Another powerful function of the <code>display</code> declaration is the ability to hide elements altogether. By giving the declaration a value of none, you can keep elements from being visible or taking up any space on the screen when you load them on a webpage. Elements that have been set to <code>display: none;</code> are still there, but in the visible display of the webpage, they're gone.</p>
+            <br>
+            <h3>Sizing</h3>
+            <p>To better control your webpage's layout, you need to be able to alter the sizes of your HTML elements as well. There are multiple ways to do so—</p>
+            <br><h4>Width</h4>
+            <p>The CSS width declaration can be used to set a specific width for an HTML element. The declaration can be used with a number of different values, like pixels (px), percentages (%), and others.</p>
+            <pre>width: 100px;</pre>
+            <p>you could also tell it how much horizontal space to take up by using the width declaration.</p>
+            <pre>p {<br>   background-color: lightblue;<br>   width: 200px;<br>}</pre>
+            <br><h4>Height</h4>
+            <p>While the width declaration allows you to set a specific width for an HTML element, the height declaration does the same for height.</p>
+            <pre>height: 5px;</pre>
+        </section>
+
+        <section id="The CSS Box Model" class="container">
+            <h2>The CSS Box Model</h2>
+            <p>When it comes to CSS, every HTML element is considered to be a box with distinct layers. This concept is called the box model. Every block-level HTML element you put on a webpage is a box.<br>The box model defines the different parts of that shape, which are broken up into four pieces, or sub-boxes:<br></p>
+            <br><li><b>Content:</b> the inner content of your HTML element.</li>
+            <li><b>Padding:</b> a box that surrounds an HTML element's inner content.</li>
+            <li><b>Border:</b> a box that surrounds an HTML element's padding.</li>
+            <li><b>Margin:</b> a functionally invisible box that surrounds an HTML element's border. The margin is meant to act as white space to separate HTML elements from each other. </li>
+            <p>You may not always style all four of these sub-boxes, so they may not always be visible.</p>
+            <br><img src="boxmodel.png" class="img">
+        </section>
+        <div class="iconbutton">
+            <a href="#heading">
+              
+              <!--Add the code here for the logo to appear and the icon to be actionable-->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </a>
+          </div>
+    </body>
+</html>

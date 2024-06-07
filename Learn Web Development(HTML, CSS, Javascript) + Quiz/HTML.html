@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="HTML_style.css">
+</head>
+<body>
+    <header>
+        <h1 id="heading">Learn HTML</h1>
+        
+            
+            <nav id="nav">
+                <ul>
+                    
+                    <li class="list"><a href="#basics">Basics</a></li>
+                    <li class="list"><a href="#Table">Table</a></li>
+                    <li class="list"><a href="#List">List</a></li>
+                    <li class="list"><a href="#examples">Examples</a></li>
+                    <li class="list"><a href="#footer">Footer</a></li>
+                </ul>
+            </nav>
+        
+    </header>
+    <br>
+
+    <section id="home" class="container">
+        <h2>Welcome to Learn HTML</h2>
+        <p>HTML is the standard markup language for creating web pages.HTML (Hypertext Markup Language) is the backbone of web development. It allows us to create structured and interactive web pages. Learn HTML from scratch with our simple and easy-to-follow tutorials.</p>
+    </section>
+
+    <section id="basics" class="container">
+        <h2>HTML Basics</h2>
+        <p>HTML stands for HyperText Markup Language. It is used to create web pages and web applications. Here are some basic concepts:</p>
+        
+            <li>Elements</li>
+            <li>Tags</li>
+            <li>Attributes</li>
+        <br>
+        <h4>Elements</h4><br>
+        <p>An HTML Element is a collection of start and end tags with the content inserted between them. HTML elements are building blocks of web pages, representing different types of content such as headings, paragraphs, links, and images.<br>Syntax:
+            <pre><span><strong><code>&lt;tagname&gt;</code></strong>Content...<strong><code>&lt;/tagname&gt;</code></strong></span></pre> </p>
+            <br><br>
+            <h4>Tags</h4><br>
+            <p>HTML tags are the building blocks of web pages. By understanding and using HTML tags effectively, you can create well-structured and informative webpages. Here are some common tags used in HTML:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;!DOCTYPE&gt;</td>
+                        <td>It defines the document type</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;html&gt;</td>
+                        <td>It is the root of HTML document</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;head&gt;</td>
+                        <td>It defines the head of an HTML document that contains non-visible data like metadata and other information</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;body&gt;</td>
+                        <td>It defines the body of a webpage and contains everything that you see on the webpage</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;h1&gt; to &lt;h6&gt;</td>
+                        <td>These are a group of heading tags used to create heading in a webpage</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;p&gt;</td>
+                        <td>It defines the paragraph in a webpage</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;!--...--&gt;</td>
+                        <td>It is used to write comments in HTML documents</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;br&gt;</td>
+                        <td>It defines a line break</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;hr&gt;</td>
+                        <td>It creates a horizontal line in a webpage</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;img&gt;</td>
+                        <td>It defines image on webpage</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;figure&gt;</td>
+                        <td>It defines a self-contained container for images, code snippets, diagrams, etc</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;figcaption&gt;</td>
+                        <td>It defines a caption for the &lt;figure&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;picture&gt;</td>
+                        <td>It defines a container to provide multiple resources for an image</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;area&gt;</td>
+                        <td>It defines an area inside the image using coordinates</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;map&gt;</td>
+                        <td>It defines a map on an image and creates a clickable area</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;canvas&gt;</td>
+                        <td>It defines an area to draw something on the webpage using javascript</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;svg&gt;</td>
+                        <td>It defines a container for SVG image</td>
+                    </tr>
+        
+                    <tr>
+                        <td>&lt;a&gt;</td>
+                        <td>It defines a hyperlink to connect to other webpages</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;link&gt;</td>
+                        <td>It connects other documents with HTML documents or defines some relationship</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;nav&gt;</td>
+                        <td>It is used to wrap navigation links</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <h4>Attributes</h4><br>
+        <p>HTML attributes provide additional information about elements. Specified in the start tag, attributes typically come in name/value pairs, like name=”value”. Attributes define properties and behavior, impacting content display and interaction on web pages.<br>Syntax:
+            <pre><span><strong><code>&lt;element attribute_name= "attribute_value"&gt;</code></strong>Content...<strong><code>&lt;/tagname&gt;</code></strong></span></pre></p>
+    </section>
+
+    <section id="Table" class="container">
+        <h2>HTML Table</h2>
+        <p>HTML tables provide a structured way to organize information into rows and columns, making it easy for users to understand and navigate.
+        <h4>Common HTML Table tags</h4>
+            <li><code>&lt;table&gt;</code> - main container of the table.</li>
+            <li><code>&lt;tr&gt;</code> - represents rows</li>
+            <li><code>&lt;td&gt;</code> - used to create data cells</li>
+            <li><code>&lt;th&gt;</code> - used to add table headings</li>
+            <li><code>&lt;caption&gt;</code> - used to insert captions</li>
+            <li><code>&lt;thead&gt;</code> - adds a separate header to the table</li>
+            <li><code>&lt;tbody&gt;</code> - shows the main body of the table</li>
+            <li><code>&lt;tfoot&gt;</code> - creates a separate footer for the table</li>
+        </p>
+        <p><br>
+            <strong><code>&lt;table&gt;</code><br></strong>
+            <strong><code>&lt;tr&gt;</code><br></strong>
+            <strong><code>&lt;th&gt;</code></strong>Month<strong><code>&lt;/th&gt;</code></strong><br>
+            <strong><code>&lt;th&gt;</code></strong>Savings<strong><code>&lt;/th&gt;</code></strong><br>
+            <strong><code>&lt;/tr&gt;</code></strong><br>
+            <strong><code>&lt;tr&gt;</code></strong><br>
+            <strong><code>&lt;td&gt;</code></strong>January<strong><code>&lt;/td&gt;</code></strong><br>
+            <strong><code>&lt;td&gt;</code></strong>$100<strong><code>&lt;/td&gt;</code></strong><br>
+            <strong><code>&lt;/tr&gt;</code></strong><br>
+            <strong><code>&lt;tr&gt;</code></strong><br>
+            <strong><code>&lt;td&gt;</code></strong>February<strong><code>&lt;/td&gt;</code></strong><br>
+            <strong><code>&lt;td&gt;</code></strong>$80<strong><code>&lt;/td&gt;</code></strong><br>
+            <strong><code>&lt;/tr&gt;</code></strong><br>
+            <strong><code>&lt;/table&gt;</code><br></strong>
+
+            <pre><table>
+                <tr>
+                    <th>Month</th>
+                    <th>Savings</th>
+                </tr>
+                <tr>
+                    <td>January</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>February</td>
+                    <td>$80</td>
+                </tr>
+                <tr>
+                    <td>March</td>
+                    <td>$60</td>
+                  </tr>
+              </table></pre>
+        </p>
+    </section>
+    <section id="List" class="container">
+        <h1>HTML List</h1><br>
+        <p>HTML Lists are used to specify lists of information. All lists may contain one or more list elements. There are three different types of HTML lists:
+            <br><br>
+            <li>Ordered List or Numbered List (ol)</li>
+            <li>List or Bulleted List (ul)</li> 
+            <li>Description List or Definition List (dl)</li>
+        </p>
+            <br><h4>Ordered List or Numbered List</h4>
+            <p>In the ordered HTML lists, all the list items are marked with numbers by default</p><br>
+            <strong><code>&lt;ol&gt;</code></strong><br>
+            <strong><code>&lt;li&gt;</code></strong>Delhi<strong><code>&lt;/li&gt;</code></strong><br>
+            <strong><code>&lt;li&gt;</code></strong>Mumbai<strong><code>&lt;/li&gt;</code></strong><br>   
+            <strong><code>&lt;li&gt;</code></strong>Kolkata<strong><code>&lt;/li&gt;</code></strong><br>
+            <strong><code>&lt;li&gt;</code></strong>Chennai<strong><code>&lt;/li&gt;</code></strong><br>
+            <strong><code>&lt;/ol&gt;</code></strong>
+            <br><br><p>Output</p>
+            <pre>1. Delhi<br>2. Mumbai<br>3. Kolkata<br>4.Chennai</pre><br>
+
+
+            <h4>Unordered List or Bulleted List</h4>
+            <p>In HTML Unordered list, all the list items are marked with bullets.</p><br>
+            <strong><code>&lt;ul&gt;</code></strong><br>
+            <strong><code>&lt;li&gt;</code></strong>Delhi<strong><code>&lt;/li&gt;</code></strong><br>
+            <strong><code>&lt;li&gt;</code></strong>Mumbai<strong><code>&lt;/li&gt;</code></strong><br>   
+            <strong><code>&lt;li&gt;</code></strong>Kolkata<strong><code>&lt;/li&gt;</code></strong><br>
+            <strong><code>&lt;li&gt;</code></strong>Chennai<strong><code>&lt;/li&gt;</code></strong><br>
+            <strong><code>&lt;/ul&gt;</code></strong>
+            <br><br><p>Output</p>
+            
+            
+            <pre class="Unordered"><ul>  
+                <li>Delhi</li>  
+                <li>Mumbai</li>  
+                <li>Kolkata</li>  
+                <li>Chennai</li>  
+               </ul>  </pre>
+            <br><br>
+            <h4>Description List or Defination List</h4>
+            <p>HTML Description list is also a list style, where entries are listed like a dictionary or encyclopedia.</p><br>
+            <strong><code>&lt;dl&gt;</code></strong><br>
+            <strong><code>&lt;dt&gt;</code></strong>Delhi<strong><code>&lt;/dt&gt;</code></strong><br>
+            <strong><code>&lt;dd&gt;</code></strong>-Capital City<strong><code>&lt;/dd&gt;</code></strong><br>
+            <strong><code>&lt;dt&gt;</code></strong>Mumbai<strong><code>&lt;/dt&gt;</code></strong><br>   
+            <strong><code>&lt;dt&gt;</code></strong>-City of Joy<strong><code>&lt;/dt&gt;</code></strong><br>
+            <strong><code>&lt;dt&gt;</code></strong>Kolkata<strong><code>&lt;/dt&gt;</code></strong><br>
+            <strong><code>&lt;dt&gt;</code></strong>-City of Joy<strong><code>&lt;/dt&gt;</code></strong><br>
+            <strong><code>&lt;dt&gt;</code></strong>Chennai<strong><code>&lt;/dt&gt;</code></strong><br>
+            <strong><code>&lt;dt&gt;</code></strong>-City of temple<strong><code>&lt;/dt&gt;</code></strong><br>
+            <strong><code>&lt;/dl&gt;</code></strong><br>
+            <br><p>Output:</p>
+        <pre>Delhi<br>         -Capital city</pre>
+        <pre>Mumbai<br>        -City of Dreams</pre>
+        <pre>Kolkata<br>        -City of Joy</pre>
+        <pre>Chennai<br>        -City of Temple</pre>
+    </section>
+
+    <div class="iconbutton">
+        <a href="#heading">
+          
+          <!--Add the code here for the logo to appear and the icon to be actionable-->
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </a>
+      </div>
+
+</body>
+</html>
+</body>
+</html>

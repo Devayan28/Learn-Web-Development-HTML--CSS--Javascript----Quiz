@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="JAVASCRIPT_style.css">
+</head>
+<body>
+    <header>
+        <h1 id="heading">Learn JavaScript</h1>
+        
+            
+            <nav>
+                <ul>
+                    
+                    <li class="list"><a href="#basics">Basics</a></li>
+                    <li class="list"><a href="#JavaScript Arrays">JavaScript Arrays</a></li>
+                    <li class="list"><a href="#JavaScript Strings">JavaScript Strings</a></li>
+                    <li class="list"><a href="#JavaScript Numbers">JavaScript Numbers</a></li>
+                    
+                </ul>
+            </nav>
+        
+    </header>
+    <br>
+
+    <section id="home" class="container">
+        <h2>Welcome to Learn JavaScript</h2>
+        <p>JavaScript is a versatile, lightweight, client-side scripting language used in web development. It can be used for both Client-side as well as Server-side developments.</p>
+    </section>
+
+    <section id="basics" class="container">
+        <h2>JavaScript Basics</h2>
+        <p>JavaScript is also known as a scripting language for web pages, It supports variables, data types, operators, conditional statements, loops, functions, arrays, and objects. With JavaScript, you can create dynamic, interactive, and engaging websites.
+        <br><br>    <h3>Lists of Variables</h3>
+         <table>
+        <thead>
+            <tr>
+                <th>Variables name</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Var</td>
+                <td>Oldest keywords to declare a variable and var can be updated and redeclared.</td>
+            </tr>
+            <tr>
+                <td>let</td>
+                <td>Block-scoped, can’t be accessible out the particular block, and let can be updated but not redeclared.</td>
+            </tr>
+            <tr>
+                <td>const</td>
+                <td>Block scope, neither can be updated nor redeclared.</td>
+            </tr>
+        </tbody>
+    </table>
+    <br><h3>Lists of Data Types</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Numbers</td>
+                <td>Represent both integer and floating-point numbers.</td>
+            </tr>
+            <tr>
+                <td>String</td>
+                <td>A string is a sequence of characters. In JavaScript, strings can be enclosed within single or double quotes.</td>
+            </tr>
+            <tr>
+                <td>Boolean</td>
+                <td>Represent a logical entity and can have two values: true or false.</td>
+            </tr>
+            <tr>
+                <td>Null</td>
+                <td>This type has only one value: null. It is left intentionally so that it shows something that does not exist.</td>
+            </tr>
+            <tr>
+                <td>Underfined</td>
+                <td>A variable that has not been assigned a value is undefined.</td>
+            </tr>
+            <tr>
+                <td>Symbol</td>
+                <td>Unlike other primitive data types, it does not have any literal form. It is a built-in object whose constructor returns a symbol that is unique.</td>
+            </tr>
+            <tr>
+                <td>bigint</td>
+                <td>The bigint type represents the whole numbers that are larger than 2<sup>53</sup>-1. To form a bigint literal number</td>
+            </tr>
+            <tr>
+                <td>Object</td>
+                <td>It is the most important data-type and forms the building blocks for modern JavaScript.</td>
+            </tr>
+        </tbody>
+    </table><br>
+    <h3>Conditional Statements</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>if statement</td>
+                <td>executing code based on a condition.</td>
+            </tr>
+            <tr>
+                <td>else statement</td>
+                <td>Alternative code execution when ‘if’ condition is not met.</td>
+            </tr>
+            <tr>
+                <td>else if statement</td>
+                <td>Additional condition check after ‘if’ and before ‘else’ statement.</td>
+            </tr>
+            <tr>
+                <td>switch statement</td>
+                <td>Multi-case conditional statement for executing code based on variable’s value.</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <h3>Function </h3>
+    <p>A function in JavaScript is a block of reusable code that performs a specific task, can take inputs (parameters), and returns a result using the return statement.</p>
+    <pre>function calcAddition(arg) {<br>   ...<br>}</pre>
+    <br><h3>Looping</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>for loop</td>
+                <td>Executes code for a specific number of iterations.</td>
+            </tr>
+            <tr>
+                <td>while loop</td>
+                <td>Repeats code while a condition is true.</td>
+            </tr>
+            <tr>
+                <td>do while loop</td>
+                <td>Repeats code, ensuring at least one execution.</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <h3>Comments</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Single line Comment</td>
+                <td>single-line comments start with //.</td>
+            </tr>
+            <tr>
+                <td>Multi line Comment</td>
+                <td>multi-line comments start with /* and end with */.</td>
+            </tr>
+        </tbody>
+    </table>
+    </section>
+
+    <section id="JavaScript Arrays" class="container">
+        <h2>JavaScript Arrays</h2>
+        <p>An array in JavaScript is a data structure used to store multiple values in a single variable. It can hold various data types and allows for dynamic resizing. Elements are accessed by their index, starting from 0.<br><h4>Creating an Array using Array Literal</h4><br>Creating an array using array literal involves using square brackets [] to define and initialize the array. This method is concise and widely preferred for its simplicity.<br>Syntax</p>
+        <pre>let arrayName = [value1, value2, ...];</pre>
+        <br>
+        <h4>Creating an Array using Array Constructor</h4>
+        <p>The “Array Constructor” refers to a method of creating arrays by invoking the Array constructor function. This approach allows for dynamic initialization and can be used to create arrays with a specified length or elements.<br>Syntax:</p>
+        <pre>let arrayName = new Array();</pre>
+        <br>
+        <h4>Basic Operations on JavaScript Arrays</h4>
+        <br>
+        <h4>Accessing Elements of an Array</h4>
+        <p>Any element in the array can be accessed using the index number. The index in the arrays starts with 0.</p><br>
+        <h4>Accessing the First Element of an Array</h4>
+        <p>The array indexing starts from 0, so we can access first element of array using the index number.</p><br>
+        <h4>Accessing the Last Element of an Array</h4>
+        <p>We can access the last array element using [array.length – 1] index number.</p><br>
+        <h4>Modifying the Array Elements</h4>
+        <p>Elements in an array can be modified by assigning a new value to their corresponding index.</p><br>
+        <h4>Adding Elements to the Array</h4>
+        <p>Elements can be added to the array using methods like push() and unshift().</p><br>
+        <h4>Removing Elements from an Array</h4>
+        <p>Remove elements using methods like pop(), shift(), or splice().</p><br>
+        <h4>Array Length</h4>
+        <p>Get the length of an array using the length property.</p>
+    </section>
+    <section id="JavaScript Strings" class="container">
+        <h1>JavaScript Strings</h1><br>
+        <p>JavaScript String is a sequence of characters, typically used to represent text. It is enclosed in single or double quotes and supports various methods for text manipulation. You can create JavaScript Strings by enclosing text in single or double quotes. String literals and the String constructor provide options. Strings allow dynamic manipulation, making it easy to modify or extract elements as needed.</p>
+        <br><h3>Declaration of a String</h3>
+        <br><h4>Using Single Quotes</h4>
+        <p>Single Quotes can be used to create a string in JavaScript. Simply enclose your text within single quotes to declare a string.<br>Syntax:</p>
+        <pre>let str = 'String with single quote';</pre>
+        <br>
+        <h4>Using Double Quotes</h4>
+        <p>Double Quotes can also be used to create a string in JavaScript. Simply enclose your text within double quotes to declare a string.<br>Syntax:</p>
+        <pre>let str = “String with double quote”;</pre>
+        <br>
+        <h4>String Constructor</h4>
+        <p>You can create a string using the String Constructor. The String Constructor is less common for direct string creation, it provides additional methods for manipulating strings. Generally, using string literals is preferred for simplicity.</p>
+        <br><h4>Using Template Literals (String Interpolation)</h4>
+        <p>You can create strings using Template Literals. Template literals allow you to embed expressions within backticks (`) for dynamic string creation, making it more readable and versatile.<br>Syntax:</p>
+        <pre>let str = 'Template Litral String';<br>let newStr = String created using ${str};</pre>
+        <br><h3>Basic Operations on JavaScript Strings</h3>
+        <br>
+        <h4>Finding the length of a String</h4>
+        <p>You can find the length of a string using the length property.</p>
+        <pre>let str = 'JavaScript';<br>let len = str.length;<br>console.log("String Length: " + len);</pre>
+        <br><h4>String Concatenation</h4>
+        <p>You can combine two or more strings using + Operator.</p>
+        <pre>let str1 = 'Java';<br>let str2 = 'Script';<br>let result = str1 + str2;<br>console.log("Concatenated String: " + result);</pre>
+        <br><h4>Escape Characters</h4>
+        <p>We can use escape characters in string to add single quotes, dual quotes, and backslash.</p>
+        <pre>\' - Inserts a single quote<br>\" - Inserts a double quote <br>\\ - Inserts a backslash</pre>
+        <br><h4>Find Substring of a String</h4>
+        <p>We can extract a portion of a string using the substring() method.</p>
+        <pre>let str = 'JavaScript Tutorial';<br>let substr = str.substring(0, 10);<br>console.log(substr);</pre>
+        <br><h4>String Search in JavaScript</h4>
+        <p>Find the index of a substring within a string using indexOf() method.</p>
+        <pre>let str = 'Learn JavaScript at GfG';<br>let searchStr = str.indexOf('JavaScript');<br>console.log(searchStr);</pre>
+    </section>
+
+    <section id="JavaScript Numbers" class="container">
+        <h1>JavaScript Numbers</h1>
+        <br>
+        <p>JavaScript Numbers are primitive data types. Unlike other programming languages, you don’t need int, float, etc. to declare different numeric values. JavaScript numbers are always stored in double-precision 64-bit binary format IEEE 754. </p>
+        <br><h3>Numeric Types in JavaScript</h3>
+        <p>In JavaScript, numbers play an important role, and understanding their behavior is essential for effective programming. Let’s explore the various aspects of numeric types in JavaScript.</p>
+        <br><h4>The Only Numeric Type</h4>
+        <p>As we know JavaScript has only one numeric type: the double-precision 64-bit binary format IEEE 754 means that it doesn’t differentiate between integers and floating-point numbers explicitly. Instead, it uses a unified approach for all numeric values.</p>
+        <li>Integers and floating-point numbers are both represented using this format.</li>
+        <li>The numeric precision is 53 bits, allowing for an accurate representation of integer values ranging from -2<sup>53</sup> + 1 to 2<sup>53</sup> – 1.</li>
+        <br><h4>Scientific Notation</h4>
+        <p>JavaScript allows writing extra-large or extra-small numbers using scientific (exponent) notation.</p>
+        <pre>let a  =  156e5;<br>let b =   156e-5;<br>console.log(a);<br>console.log(b);</pre>
+        <br><h4>Integer Precision</h4>
+        <p>Integers (numbers without a period or exponent notation) are accurate up to 15 digits.</p>
+        <pre>let a = 999999999999999;<br>let b = 9999999999999999;<br>console.log(a);<br>console.log(b);</pre>
+        <br><h4>Adding Numbers and Strings</h4>
+        <li>JavaScript uses the + operator for both addition and concatenation.</li>
+        <li>Numbers are added, when strings are concatenated.</li>
+        <pre>// Adding two numbers<br>let x = 10;<br>let y = 15;<br>let z = x + y;<br>console.log(z);<br>// Concatenating two strings:<br>let a = "10";<br>let b = "30";<br>let c  = a + b;<br>console.log(c);</pre>
+        <br><h4>Numeric Strings</h4>
+        <p>JavaScript automatically converts the numeric strings to numbers in most operations like.</p>
+        <pre>let x  = "100" / "10";<br>let y  = "100" * "10";<br>let z = "100" - "10";<br>console.log(x);<br>console.log(y);<br>console.log(z);</pre>
+        <br><h3>Number Literals</h3>
+        <p>The types of number literals You can use decimal, binary, octal, and hexadecimal.</p>
+        <br><h4>Decimal Numbers</h4>
+        <p>JavaScript Numbers has only one type of number and it can hold both with or without decimal values.</p>
+        <pre>let a=33;<br>let b=3.3;<br>console.log(a);<br>console.log(b);</pre>
+        <br><h4>Octal Number</h4>
+        <p>If the number starts with 0 and the following number is smaller than 8. It will be parsed as an Octal Number.</p>
+        <pre>let x = 0562;<br>console.log(x);</pre>
+        <br><h4>Binary Numbers</h4>
+        <p>They start with 0b or 0B followed by 0’s and 1’s.</p>
+        <pre>let x = 0b11; <br>let y = 0B0111;<br>console.log(x);<br>console.log(y);</pre>
+    </section>
+    <div class="iconbutton">
+        <a href="#heading">
+          
+          <!--Add the code here for the logo to appear and the icon to be actionable-->
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </a>
+      </div>
+</body>
+</html>

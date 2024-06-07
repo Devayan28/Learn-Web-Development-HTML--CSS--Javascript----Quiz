@@ -1,0 +1,82 @@
+body {
+    background-color: rgb(228, 216, 200);
+    font-family: 'Comic Sans MS';
+  }
+  
+  /* Navigation Bar */
+  
+  #home {
+    background-color:  #3a6ab8;
+    padding-bottom: 1.5cm;
+    margin-left:-1cm;
+    margin-right:-1cm;
+    margin-top:-1cm;
+    padding-top: 1.5cm;
+    padding-bottom: 2.5cm;
+    height: 5mm;
+   }
+
+   .site_name {
+    float: center;
+    font-family: 'Comic Sans MS';
+    text-align: center;
+    color: aliceblue;
+    font-weight: bolder;
+    font-size: 50px;
+  }
+
+  .site_name .quote {
+    font-size: 15px;
+    font-style: italic;
+    align-items: center;
+    padding-bottom: 10px;
+    flex-direction: row;
+
+  }
+
+  .site_name img {
+    width: 50px;
+    margin-right: 10px;
+    margin-top: 12px;
+    align-items: center;
+    }
+
+
+    
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #9dcaf2;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    
+    h1 {
+      color: #333;
+    }
+    
+    .button {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    .correct {
+      background-color: #8BC34A;
+    }
+    
+    .wrong {
+      background-color: #F44336;
+    }
+    
+    #result {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+    

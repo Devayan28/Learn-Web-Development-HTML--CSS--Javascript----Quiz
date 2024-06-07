@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index_style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div id="home">
+            <div class="site_name">
+                First Step
+                <img src="icons8-open-book-100.png" alt="">
+                <div class="quote">
+                    ~A step towards learning Web Development~
+                </div>
+            </div>
+        </div>
+    </nav>       
+    
+    <!-- Learn and Practice section using buttons -->
+    <p class="buttons">Let's Go!!!</p>
+    <div class="button-container" >
+        <button class="custom-button" id="button1" type="submit">
+            <a href="learn.html" class="custom-link">
+                <h1>Learn</h1>
+                <img src="icons8-learning-100.png" alt="">
+            </a>
+        </button>
+
+        <button class="custom-button" id="button2" type="submit">
+            <a href="practice.html" class="custom-link">
+                <h1>Practice</h1>
+                <img src="icons8-test-100.png" alt="">
+            </a>
+        </button>
+    </div>
+    <br><br><br><br><br>
+
+    <!-- Introduction about the website -->
+    <div class="section1">
+            <p class="paragraph1">
+                ~Welcome to our learning platform, where you can embark on an exciting journey into the world of web development! Our website offers comprehensive resources and engaging quizzes to help you achieve your learning goals~
+            </p>
+            <img src="paragraph1.png" alt="">
+    </div>
+    <br><br>
+
+    <div class="section2">
+        <img src="paragraph2.png" alt="">
+        <p class="paragraph2">
+            ~Dive into our extensive collection of tutorials, covering a wide range of topics in web development, including HTML, CSS and JavaScript. Our tutorials are designed to be beginner-friendly yet informative, providing step-by-step guidance and real-world examples to reinforce your understanding~
+        </p>
+    </div>
+    <br><br><br>
+
+    <div class="section3">
+        <p class="paragraph3">
+            ~But learning doesn't stop at tutorials alone. Test your knowledge and challenge yourself with our interactive quizzes. Put your skills to the test as you tackle questions ranging from basic concepts to advanced techniques. Instant feedback and explanations accompany each question, helping you learn from your mistakes and solidify your understanding~
+        </p>
+        <img src="paragraph3.png" alt="">
+    </div>
+    <br><br><br><br>
+
+    <!-- Feedback -->
+    <section id="feedback">
+        
+        <h2>Feedback</h2>
+        <div style="clear:both;"></div>
+        <div class="all_feedback" id="all_feedback">
+            <div class="feedback">
+                <span>&#8220;</span>
+                Really great website. Website has really interactive elements.
+                <span>&#8221;</span>
+            </div>
+            <div class="feedback">
+                <span>&#8220;</span>
+                In short, I wholeheartedly recommend this website for learning. 
+                This website is a valuable asset, and its contributions has undoubtedly enhanced my knowledge.
+                <span>&#8221;</span>
+            </div>
+            <div class="feedback">
+                <span>&#8220;</span>
+                A huge range of quiz questions and versatile information.
+                <span>&#8221;</span>
+            </div>
+        </div>
+      </section>
+
+        <h1>Your feedback is valuable to us!</h1>
+    </div>
+    <section id="contact">
+        <div class="flex_center">
+          <fieldset>
+            <legend class="introduction">Leave a Feedback</legend>          
+            <input type="text" placeholder="Name (Optional)"> <br/>
+            <textarea id="new_feedback" cols="500" rows="10" placeholder="Message"></textarea>
+            <div class="flex_center">
+              <button id="feedback_btn" onclick="addFeedback()">Submit</button>
+            </div>
+          </fieldset>
+        </div>
+    </section>
+
+    <!-- Icon Button -->
+    <div class="iconbutton">
+        <a href="#home">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </a>
+    </div>
+      
+    <!-- Popup -->  
+      <div class="popup" id="popup" class="flexCenter">
+        <img src="icons8-ok-100.png"/>
+        <h3>Feedback Submitted</h3>
+        <button onclick="showPopup(false)">Ok</button>
+      </div>
+</body>
+</html>
+
+<script src="script.js">
+   
+</script>

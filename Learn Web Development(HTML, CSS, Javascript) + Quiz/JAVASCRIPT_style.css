@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #eeeded;
+    color: #3e3d3d;
+}
+
+#heading {
+    color: #fff;
+    font-family: 'Comic Sans MS';
+    font-size: 50px;
+}
+
+.list {
+    color: #fff;
+    font-family: 'Comic Sans MS';
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #cfc5c1;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+header {
+    background: #3a7ddc;
+    color: #ece5e5;
+    padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Comic Sans MS';
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: #575757;
+}
+
+section {
+    margin: 20px 0;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #bdbdbd;
+    padding-bottom: 5px;
+}
+
+ul {
+    margin-top: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 3px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+pre {
+    background: #eeecec;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+code {
+    background: #e1e0e0;
+    padding-top: 5px;
+    padding-bottom: 6px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+img{
+    height: 250px;
+    width: 400px;
+    opacity: 0.8;
+    float: center;
+}
+
+.iconbutton{
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    background-color: #3a6ab8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+    cursor: pointer;
+  }
